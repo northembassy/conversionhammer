@@ -18,6 +18,21 @@ if (!function_exists('add_filter')) {
     header('HTTP/1.1 403 Forbidden');
     exit();
 }
+if (!defined('CHAMMER_FILE')) {
+    define('CHAMMER_FILE', __FILE__);
+}
+if (!defined('CHAMMER_PATH')) {
+    define('CHAMMER_PATH', dirname(CHAMMER_FILE));
+}
+if (!defined('CHAMMER_URL')) {
+    define('CHAMMER_URL', plugin_dir_url(CHAMMER_FILE));
+}
+if (!defined('CHAMMER_CSSU')) {
+    define('CHAMMER_CSSU', CHAMMER_URL . '/assets/css');
+}
+if (!defined('CHAMMER_JSU')) {
+    define('CHAMMER_JSU', CHAMMER_URL . '/assets/js');
+}
  
 // ConversionHammer WP plugin.
-require_once( dirname(__FILE__) . '/conversionHammer.php' );
+require_once( CHAMMER_PATH . '/conversionHammer.php' );

@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Call Me Back button</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
+    <link rel="stylesheet" href="../css/ch.css">
+  </head>
+  <body>
+    <div id="call_igsidebar">
+      <a href="javascript:;" title="Open contact panel">contact button</a>
+    </div>
+    <div id="call_igsidebar_mobile">
+      <a href="tel:+00000000" title="Open contact panel"><h1>Call now<small>To consult with a specialist</small></h1></a>
+    </div>
+    <div id="igsidebar">
+      <div id="igsidebar_content">
+        <div id="igsidebar_content_close">
+          <a class="icon-cancel" href="javascript:;" title="Close Call Me Now sidebar"></a>
+        </div>
+        <div id="igsidebar_content_title">
+          <h3>Title <span>of</span></h3>
+        </div>
+        <div id="igsidebar_content_thanks">
+          <h1>Thank you</h1>
+        </div>
+        <div id="igsidebar_content_welcome">
+          <h1>How are you?</h1>
+          <p>Let’s get in touch.<br>Enter your phone number and we will call you back <span>within 3 minutes.</span></p>
+        </div>
+        <form id="igsidebar_content_sub">
+          <div id="igsidebar_content_sub_schedule">
+            <h1>What’s the best time to call you?</h1>
+            <div id="igsidebar_content_sub_schedule_block">
+              <div id="igsidebar_content_sub_schedule_block_day">
+                <select name="block_day" id="block_day">
+                  <option value="today">today</option>
+                  <option value="tomorrow">tomorrow</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+              </div>
+              <p>at</p>
+              <div id="igsidebar_content_sub_schedule_block_time">
+                <select name="block_time" id="block_time">
+                  <option value="1 AM">1 AM</option>
+                  <option value="2 AM">2 AM</option>
+                  <option value="3 AM">3 AM</option>
+                  <option value="4 AM">4 AM</option>
+                  <option value="5 AM">5 AM</option>
+                  <option value="6 AM">6 AM</option>
+                  <option value="7 AM">7 AM</option>
+                  <option value="8 AM">8 AM</option>
+                  <option value="9 AM">9 AM</option>
+                  <option value="10 AM">10 AM</option>
+                  <option value="11 AM">11 AM</option>
+                  <option value="12 AM">12 AM</option>
+                  <option value="1 PM">1 PM</option>
+                  <option value="2 PM">2 PM</option>
+                  <option value="3 PM">3 PM</option>
+                  <option value="4 PM">4 PM</option>
+                  <option value="5 PM">5 PM</option>
+                  <option value="6 PM">6 PM</option>
+                  <option value="7 PM">7 PM</option>
+                  <option value="8 PM">8 PM</option>
+                  <option value="9 PM">9 PM</option>
+                  <option value="10 PM">10 PM</option>
+                  <option value="11 PM">11 PM</option>
+                  <option value="12 PM">12 PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div id="igsidebar_content_sub_mail">
+            <span>
+              <label for="igsidebar_content_sub_mail_email">or give us your e-mail</label>
+              <input id="igsidebar_content_sub_mail_email" type="email" value="">
+            </span>
+          </div>
+          <div id="igsidebar_content_sub_callme">
+            <input type="tel" value="+1">
+            <button type="submit">Call Me Now</button>
+            <a href="#igsidebar_content_welcome" title="Choose a time for the call">Choose a time for the call</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../js/ch.js"></script>
+  </body>
+</html>
