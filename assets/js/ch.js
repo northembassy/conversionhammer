@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+jQuery(document).ready(function( $ ) {
     var callWasSchedueled = false;
     // Select2
     $('select').select2({

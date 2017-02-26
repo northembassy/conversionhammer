@@ -29,18 +29,19 @@ if (!class_exists('conversionHammer')) {
         public $filevers = '1.0.0';
 
         function __construct()
-        {
-            add_action('wp_enqueue_scripts', array($this, 'scripts'), 10);
+        { 
+            add_action('wp_enqueue_scripts', array($this, 'frontScripts'), 10);
         }
+                
 
-        public function scripts()
+        public function frontScripts()
         {
             if (!is_admin()) {
- 
+
                 /**
                  * Styles
                  */
-                wp_register_style('select2ch', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css', false, $this->filevers );
+                wp_register_style('select2ch', CHAMMER_CSSU . '/select2.min.css', false, $this->filevers);
                 wp_enqueue_style('select2ch');
                 wp_register_style('conversionhammer', CHAMMER_CSSU . '/ch.css', array('select2ch'), $this->filevers);
                 wp_enqueue_style('conversionhammer');
@@ -49,9 +50,9 @@ if (!class_exists('conversionHammer')) {
                  * Scripts
                  */
                 wp_enqueue_script('jquery');
-                wp_register_script('select2ch', '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.min.js', array('jquery'), $this->filevers, true);
+                wp_register_script('select2ch', CHAMMER_JSU . '/select2.full.min.js', array( 'jquery' ), $this->filevers, true);
                 wp_enqueue_script('select2ch');
-                wp_register_script('conversionhammer', CHAMMER_JSU . '/ch.js', array('select2ch'), $this->filevers, true);
+                wp_register_script('conversionhammer', CHAMMER_JSU . '/ch.js', array( 'select2ch' ), $this->filevers, true);
                 wp_enqueue_script('conversionhammer');
             }
         }
