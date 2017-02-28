@@ -1,6 +1,9 @@
 
-// ConversionHammer main JS file
+
+    console.log('ConversionHammer file');
+
 jQuery(document).ready(function ($) {
+    console.log('ConversionHammer');
     var callWasSchedueled = false;
     // Select2
     $('select').select2({

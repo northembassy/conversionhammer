@@ -4,17 +4,20 @@ if (!class_exists('chAdmin')) {
     class chAdmin
     {
 
+        public $fileversa = '1.0.0';
         function __construct()
         {
-            add_action('admin_menu', array($this, 'chAdminmenu'));
             add_action('admin_enqueue_scripts', array($this, 'chAdmincp'), 10);
+            add_action('admin_menu', array($this, 'chAdminmenu'));
         }
 
-        public function chAdmincp($hook_suffix)
+        public function chAdmincp()
         {
+            if (is_admin()){
             wp_enqueue_style('wp-color-picker');
-            wp_register_script('chcolorpicker', CHAMMER_JSU . '/chcolorpicker.js', array('wp-color-picker'), $this->filevers, true);
+            wp_register_script('chcolorpicker', CHAMMER_JSU . '/chcolorpicker.js', array('wp-color-picker'), $this->fileversa, true);
             wp_enqueue_script('chcolorpicker');
+            }
         }
 
         public function chAdminmenu()
@@ -22,6 +25,28 @@ if (!class_exists('chAdmin')) {
             //create new top-level menu
             add_menu_page(__('ConversionHammer', 'conversionhammer'), __('ConversionHammer', 'conversionhammer'), 'activate_plugins', 'conversionhammer', array($this, 'chAdminsettings'));
             register_setting('ch-settings', 'conversionhammer_phone');
+            $chprefix = 'conversionhammer_';
+            register_setting('ch-settings', $chprefix . 'contactbuttontext');
+            register_setting('ch-settings', $chprefix . 'phone');
+            register_setting('ch-settings', $chprefix . 'besttimecalltext');
+            register_setting('ch-settings', $chprefix . 'orgivemailtext');
+            register_setting('ch-settings', $chprefix . 'content_title');
+            register_setting('ch-settings', $chprefix . 'content_title2');
+            register_setting('ch-settings', $chprefix . 'welcometitle');
+            register_setting('ch-settings', $chprefix . 'welcometext');
+            register_setting('ch-settings', $chprefix . 'toemail');
+            register_setting('ch-settings', $chprefix . 'bgcolor');
+            register_setting('ch-settings', $chprefix . 'btnbg');
+            register_setting('ch-settings', $chprefix . 'btntext');
+            register_setting('ch-settings', $chprefix . 'btnbgh');
+            register_setting('ch-settings', $chprefix . 'btntexth');
+            register_setting('ch-settings', $chprefix . 'callmectatext');
+            register_setting('ch-settings', $chprefix . 'choosecalltimetext');
+            register_setting('ch-settings', $chprefix . 'sbmobilectatext1');
+            register_setting('ch-settings', $chprefix . 'sbmobilectatext2');
+            register_setting('ch-settings', $chprefix . 'sbmobilebg');
+            register_setting('ch-settings', $chprefix . 'sbmobiletext'); 
+   
         }
 
         public function chAdminsettings()
@@ -121,14 +146,14 @@ if (!class_exists('chAdmin')) {
                   <tr>
                     <th valign="top"><?php _e('or give us your e-mail text', 'conversionhammer'); ?></th>
                     <td valign="top">
-                      <input type="text" id="conversionhammer_orgivemailtext" name="conversionhammer_orgivemailtext;" value="<?php echo $conversionhammer_orgivemailtext; ?>"/>
+                      <input type="text" id="conversionhammer_orgivemailtext" name="conversionhammer_orgivemailtext" value="<?php echo $conversionhammer_orgivemailtext; ?>"/>
                       <br />(<?php _e('or give us your e-mail', 'conversionhammer'); ?>)
                     </td> 
                   </tr>
                   <tr>
                     <th valign="top"><?php _e('Choose a time for the calltext', 'conversionhammer'); ?></th>
                     <td valign="top">
-                      <input type="text" id="conversionhammer_choosecalltimetext" name="conversionhammer_choosecalltimetext;" value="<?php echo $conversionhammer_choosecalltimetext; ?>"/>
+                      <input type="text" id="conversionhammer_choosecalltimetext" name="conversionhammer_choosecalltimetext" value="<?php echo $conversionhammer_choosecalltimetext; ?>"/>
                       <br />(<?php _e('Choose a time for the call', 'conversionhammer'); ?>)
                     </td> 
                   </tr> 
@@ -172,16 +197,16 @@ if (!class_exists('chAdmin')) {
                         <p><?php _e('Button background', 'conversionhammer'); ?><br />
                           <input type="text" 
                                  value="<?php echo $conversionhammer_btnbgh; ?>" 
-                                 id="conversionhammer_btnbg" 
-                                 name="conversionhammer_btnbg" 
+                                 id="conversionhammer_btnbgh" 
+                                 name="conversionhammer_btnbgh" 
                                  data-default-color="#3388ff" 
                                  class="ch_colorpicker" />
                         </p>
                         <p><?php _e('Button text', 'conversionhammer'); ?><br />
                           <input type="text" 
                                  value="<?php echo $conversionhammer_btntexth; ?>"
-                                 id="conversionhammer_btntext" 
-                                 name="conversionhammer_btntext" 
+                                 id="conversionhammer_btntexth" 
+                                 name="conversionhammer_btntexth" 
                                  data-default-color="#ffffff"
                                  class="ch_colorpicker" />
                         </p></div>

@@ -1,5 +1,4 @@
-
-// ConversionHammer main CCS file
+ 
 #call_igsidebar
 {
     right: 250px;
@@ -295,11 +294,11 @@
     border: 1px solid #a6cbff;
     font-family: "Nunito", "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
 }
-/*#igsidebar_content_sub_callme button:hover, #igsidebar_content_sub_callme button:focus
+#igsidebar_content_sub_callme button:hover, #igsidebar_content_sub_callme button:focus
 {
     color: #ffffff;
     background: #3388ff;
-}*/
+}
 #igsidebar_content_sub_callme a
 {
     -webkit-border-radius: 3px;
@@ -359,7 +358,7 @@
     display: block;
     text-align: center;
     padding: 9px 0 0 0;
-    /*    background: #006aff;*/
+        background: #006aff;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -367,7 +366,7 @@
 {
     width: 302px;
     height: 65px;
-    /*    color: #ffffff;*/
+        color: #ffffff;
     margin: 0 auto;
     font-size: 30px;
     text-align: left;
@@ -380,7 +379,7 @@
     background-size: 65px 65px;
     font-family: "Nunito", "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
 }
-#call_igsidebar_mobile small
+#call_igsidebar_mobile span
 {
     margin: 0;
     padding: 0;
