@@ -1,5 +1,6 @@
 
-jQuery(document).ready(function( $ ) {
+// ConversionHammer main JS file
+jQuery(document).ready(function ($) {
     var callWasSchedueled = false;
     // Select2
     $('select').select2({
