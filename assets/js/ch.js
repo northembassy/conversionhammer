@@ -1,6 +1,6 @@
 
 
-    console.log('ConversionHammer file');
+console.log('ConversionHammer file');
 
 jQuery(document).ready(function ($) {
     console.log('ConversionHammer');
@@ -45,22 +45,41 @@ jQuery(document).ready(function ($) {
         var neCallUp = ("CALL NOW");
         var email = $("#igsidebar_content_sub_mail_email").val();
         var url = window.location.href;
+
         if ($(email).val()) {
             // section8
         } else {
             if (neNumber.match(/\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/)) {
                 if (callWasSchedueled == true) {
-                    emailjs.send("gmail", "callmenowsubmitnumber", {number: neNumber, day: neDay, time: neTimeOfDay, url: url}).then(function (response) {
-                        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                    }, function (err) {
-                        console.log("FAILED. error=", err);
+                    $.ajax({
+                        type: "POST",
+                        url: conversionhammer_ajax.ajax_url,
+                        datatype: "html",
+                        data: {
+                            'action': 'conversionhammer_mail',
+                            'number': neNumber,
+                            'day': neDay,
+                            'time': neTimeOfDay,
+                            'url': url
+                        },
+                        success: function (data) {
+                            console.log("ConversionHammer SUCCESS.");
+                        }, error: function (data) {
+                            console.log("ConversionHammer ERROR.");
+                        }
                     });
                 } else {
-                    emailjs.send("gmail", "callmenowsubmitnumber", {number: neNumber, callup: neCallUp, url: url}).then(function (response) {
-                        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                    }, function (err) {
-                        console.log("FAILED. error=", err);
+
+                    var data = {
+                        'action': 'conversionhammer_mail',
+                        'number': neNumber,
+                        'callup': neCallUp,
+                        'url': url,
+                    };
+                    $.post(conversionhammer_ajax.ajax_url, data, function (response) {
+                        console.log("ConversionHammer SUCCESS.");
                     });
+
                 }
 
 

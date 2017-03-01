@@ -29,17 +29,45 @@ if (!class_exists('conversionHammer')) {
         protected $config = array();
         protected $data;
 
-        function __construct(
-//                $config = array()
-                )
+        function __construct()
         {
-//            $this->config['cache_dir'] = CHAMMER_PATH;
-//            if (is_array($config)) {
-//                $this->config = $config + $this->config;
-//            }
+            add_action('init', array($this, 'languages'), 10);
+
+            add_action('wp_ajax_nopriv_conversionhammer_mail', array($this, 'conversionhammer_mail'));
+            add_action('wp_ajax_conversionhammer_mail', array($this, 'conversionhammer_mail'));
         }
- 
- 
+
+        public function languages()
+        {
+            load_plugin_textdomain('conversionhammer', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+        }
+
+        public function conversionhammer_mail()
+        {
+            $chprefix = 'conversionhammer_';
+            $conversionhammer_toemail = get_option($chprefix . 'toemail');
+            $customerphonenr = esc_attr($_POST['number']);
+            $customerday = esc_attr($_POST['day']);
+            $customertime = esc_attr($_POST['time']);
+
+            $to = $conversionhammer_toemail;
+            $subject = "[ConversionHammer form]";
+            $message = '';
+            $message .= 'Phone: ' . $customerphonenr . "\n";
+
+            $message .= isset($customerday) ? 'When: ' . $customerday . "\n" : '';
+            $message .= isset($customertime) ? 'Time: ' . $customertime . "\n" : '';
+
+            $returndata = '';
+            if (wp_mail($to, $subject, $message)) {
+                $returndata .= "ConversionHammer form email sent ";
+            } else {
+                $returndata .= "ConversionHammer form email not sent ";
+            }
+            echo $returndata;
+
+            die(); // never forget to die() your AJAX reuqests
+        }
 
     }
 

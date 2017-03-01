@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Rolands Umbrovskis <rolands@mediabox.lv>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-01 01:15+0100\n"
+"PO-Revision-Date: 2017-03-01 01:15+0100\n"
+"Last-Translator: Rolands Umbrovskis <rolands@mediabox.lv>\n"
+"Language-Team: Rolands Umbrovskis <info@mediabox.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: admin/chAdmin.php:26
+msgid "ConversionHammer"
+msgstr ""
+
+#: admin/chAdmin.php:55
+msgid "Settings"
+msgstr ""
+
+#: admin/chAdmin.php:60
+msgid "contact button"
+msgstr ""
+
+#: admin/chAdmin.php:63 admin/chAdmin.php:99 admin/chAdmin.php:143
+msgid "What’s the best time to call you?"
+msgstr ""
+
+#: admin/chAdmin.php:64 admin/chAdmin.php:150
+msgid "or give us your e-mail"
+msgstr ""
+
+#: admin/chAdmin.php:78 admin/chAdmin.php:135 front/chFront.php:104
+msgid "Call Me Now"
+msgstr ""
+
+#: admin/chAdmin.php:79 admin/chAdmin.php:157
+msgid "Choose a time for the call"
+msgstr ""
+
+#: admin/chAdmin.php:82 admin/chAdmin.php:223
+msgid "Call now"
+msgstr ""
+
+#: admin/chAdmin.php:83 admin/chAdmin.php:229
+msgid "To consult with a specialist"
+msgstr ""
+
+#: admin/chAdmin.php:90
+msgid "Email address where to send emails"
+msgstr ""
+
+#: admin/chAdmin.php:96
+msgid "Contact button text"
+msgstr ""
+
+#: admin/chAdmin.php:103
+msgid "Phone number"
+msgstr ""
+
+#: admin/chAdmin.php:107
+msgid "Content title"
+msgstr ""
+
+#: admin/chAdmin.php:113
+msgid "Content title 2nd line"
+msgstr ""
+
+#: admin/chAdmin.php:120
+msgid "Welcome title"
+msgstr ""
+
+#: admin/chAdmin.php:126
+msgid "Welcome text"
+msgstr ""
+
+#: admin/chAdmin.php:132
+msgid "Call Me Now text"
+msgstr ""
+
+#: admin/chAdmin.php:140
+msgid "Best time to call text"
+msgstr ""
+
+#: admin/chAdmin.php:147
+msgid "or give us your e-mail text"
+msgstr ""
+
+#: admin/chAdmin.php:154
+msgid "Choose a time for the calltext"
+msgstr ""
+
+#: admin/chAdmin.php:163
+msgid "Colors (sidebar)"
+msgstr ""
+
+#: admin/chAdmin.php:174
+msgid "Colors button"
+msgstr ""
+
+#: admin/chAdmin.php:177
+msgid "Normal"
+msgstr ""
+
+#: admin/chAdmin.php:178 admin/chAdmin.php:197
+msgid "Button background"
+msgstr ""
+
+#: admin/chAdmin.php:186 admin/chAdmin.php:205
+msgid "Button text"
+msgstr ""
+
+#: admin/chAdmin.php:196
+msgid "Hover"
+msgstr ""
+
+#: admin/chAdmin.php:217
+msgid "Mobile"
+msgstr ""
+
+#: admin/chAdmin.php:219
+msgid "CTA text"
+msgstr ""
+
+#: admin/chAdmin.php:225
+msgid "CTA text 2nd line"
+msgstr ""
+
+#: admin/chAdmin.php:232
+msgid "Background"
+msgstr ""
+
+#: admin/chAdmin.php:240
+msgid "Text"
+msgstr ""
+
+#: admin/chAdmin.php:254
+msgid "Save Changes"
+msgstr ""
+
+#: front/chFront.php:111 front/chFront.php:114
+msgid "Open contact panel"
+msgstr ""
+
+#: front/chFront.php:124
+msgid "Close Call Me Now sidebar"
+msgstr ""
+
+#: front/chFront.php:133
+msgid "Thank you"
+msgstr ""
+
+#: front/chFront.php:145
+msgid "today"
+msgstr ""
+
+#: front/chFront.php:146
+msgid "tomorrow"
+msgstr ""
+
+#: front/chFront.php:147
+msgid "Monday"
+msgstr ""
+
+#: front/chFront.php:148
+msgid "Tuesday"
+msgstr ""
+
+#: front/chFront.php:149
+msgid "Wednesday"
+msgstr ""
+
+#: front/chFront.php:150
+msgid "Thursday"
+msgstr ""
+
+#: front/chFront.php:151
+msgid "Friday"
+msgstr ""
+
+#: front/chFront.php:152
+msgid "Saturday"
+msgstr ""
+
+#: front/chFront.php:153
+msgid "Sunday"
+msgstr ""
+
+#: front/chFront.php:156
+msgid "at"
+msgstr ""
+
+#: front/chFront.php:159
+msgid "1 AM"
+msgstr ""
+
+#: front/chFront.php:160
+msgid "2 AM"
+msgstr ""
+
+#: front/chFront.php:161
+msgid "3 AM"
+msgstr ""
+
+#: front/chFront.php:162
+msgid "4 AM"
+msgstr ""
+
+#: front/chFront.php:163
+msgid "5 AM"
+msgstr ""
+
+#: front/chFront.php:164
+msgid "6 AM"
+msgstr ""
+
+#: front/chFront.php:165
+msgid "7 AM"
+msgstr ""
+
+#: front/chFront.php:166
+msgid "8 AM"
+msgstr ""
+
+#: front/chFront.php:167
+msgid "9 AM"
+msgstr ""
+
+#: front/chFront.php:168
+msgid "10 AM"
+msgstr ""
+
+#: front/chFront.php:169
+msgid "11 AM"
+msgstr ""
+
+#: front/chFront.php:170
+msgid "12 AM"
+msgstr ""
+
+#: front/chFront.php:171
+msgid "1 PM"
+msgstr ""
+
+#: front/chFront.php:172
+msgid "2 PM"
+msgstr ""
+
+#: front/chFront.php:173
+msgid "3 PM"
+msgstr ""
+
+#: front/chFront.php:174
+msgid "4 PM"
+msgstr ""
+
+#: front/chFront.php:175
+msgid "5 PM"
+msgstr ""
+
+#: front/chFront.php:176
+msgid "6 PM"
+msgstr ""
+
+#: front/chFront.php:177
+msgid "7 PM"
+msgstr ""
+
+#: front/chFront.php:178
+msgid "8 PM"
+msgstr ""
+
+#: front/chFront.php:179
+msgid "9 PM"
+msgstr ""
+
+#: front/chFront.php:180
+msgid "10 PM"
+msgstr ""
+
+#: front/chFront.php:181
+msgid "11 PM"
+msgstr ""
+
+#: front/chFront.php:182
+msgid "12 PM"
+msgstr ""

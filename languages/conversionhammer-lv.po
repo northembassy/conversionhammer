@@ -1,0 +1,295 @@
+# ConversionHammer.
+# Copyright (C) ConversionHammer
+# This file is distributed under the same license as the PACKAGE package.
+# Rolands <rolands@mediabox.lv>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-01 01:16+0100\n"
+"PO-Revision-Date: 2017-03-01 01:42+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.12\n"
+"Last-Translator: Rolands <rolands@mediabox.lv>\n"
+"Language: lv\n"
+
+#: admin/chAdmin.php:26
+msgid "ConversionHammer"
+msgstr "ConversionHammer."
+
+#: admin/chAdmin.php:55
+msgid "Settings"
+msgstr "Uzstādījumi "
+
+#: admin/chAdmin.php:60
+msgid "contact button"
+msgstr "sazināties"
+
+#: admin/chAdmin.php:63 admin/chAdmin.php:99 admin/chAdmin.php:143
+msgid "What’s the best time to call you?"
+msgstr "Labākais laiks, lai sazinātos?"
+
+#: admin/chAdmin.php:64 admin/chAdmin.php:150
+msgid "or give us your e-mail"
+msgstr "vai nosūti mums savu e-pastu"
+
+#: admin/chAdmin.php:78 admin/chAdmin.php:135 front/chFront.php:104
+msgid "Call Me Now"
+msgstr "Sazināties tagad"
+
+#: admin/chAdmin.php:79 admin/chAdmin.php:157
+msgid "Choose a time for the call"
+msgstr "Izvēlies laiku, lai sazinātos"
+
+#: admin/chAdmin.php:82 admin/chAdmin.php:223
+msgid "Call now"
+msgstr "Sazināties tagad"
+
+#: admin/chAdmin.php:83 admin/chAdmin.php:229
+msgid "To consult with a specialist"
+msgstr "Speciālista konsultācija"
+
+#: admin/chAdmin.php:90
+msgid "Email address where to send emails"
+msgstr "E-pasts, kur sūtīt ziņojumus"
+
+#: admin/chAdmin.php:96
+msgid "Contact button text"
+msgstr "Contaktu pogas teksts"
+
+#: admin/chAdmin.php:103
+msgid "Phone number"
+msgstr "Tālrunis"
+
+#: admin/chAdmin.php:107
+msgid "Content title"
+msgstr "Virsraksts"
+
+#: admin/chAdmin.php:113
+msgid "Content title 2nd line"
+msgstr "Virsraksta otrā rinda"
+
+#: admin/chAdmin.php:120
+msgid "Welcome title"
+msgstr "Uzaicinājuma virsraksts"
+
+#: admin/chAdmin.php:126
+msgid "Welcome text"
+msgstr "Uzaicinājuma teksts"
+
+#: admin/chAdmin.php:132
+msgid "Call Me Now text"
+msgstr "Sazināties tagad teksts"
+
+#: admin/chAdmin.php:140
+msgid "Best time to call text"
+msgstr "Labākais laiks lai sazinātos teksts"
+
+#: admin/chAdmin.php:147
+msgid "or give us your e-mail text"
+msgstr "vai nosūti mums savu e-pastu teksts"
+
+#: admin/chAdmin.php:154
+msgid "Choose a time for the calltext"
+msgstr "Izvēlies laiku teksts"
+
+#: admin/chAdmin.php:163
+msgid "Colors (sidebar)"
+msgstr "Krāsas (sānu malai)"
+
+#: admin/chAdmin.php:174
+msgid "Colors button"
+msgstr "Pogas krāsas"
+
+#: admin/chAdmin.php:177
+msgid "Normal"
+msgstr "Parasts"
+
+#: admin/chAdmin.php:178 admin/chAdmin.php:197
+msgid "Button background"
+msgstr "Pogas fons"
+
+#: admin/chAdmin.php:186 admin/chAdmin.php:205
+msgid "Button text"
+msgstr "Pogas teksts"
+
+#: admin/chAdmin.php:196
+msgid "Hover"
+msgstr "Uzbraucot virsū"
+
+#: admin/chAdmin.php:217
+msgid "Mobile"
+msgstr "Mobilajā versijā"
+
+#: admin/chAdmin.php:219
+msgid "CTA text"
+msgstr "CTA teksts"
+
+#: admin/chAdmin.php:225
+msgid "CTA text 2nd line"
+msgstr "CTA otrā papildinājums"
+
+#: admin/chAdmin.php:232
+msgid "Background"
+msgstr "Fons"
+
+#: admin/chAdmin.php:240
+msgid "Text"
+msgstr "Teksts"
+
+#: admin/chAdmin.php:254
+msgid "Save Changes"
+msgstr "Saglabāt izmaiņas"
+
+#: front/chFront.php:111 front/chFront.php:114
+msgid "Open contact panel"
+msgstr "Atvērt kontaktu logu"
+
+#: front/chFront.php:124
+msgid "Close Call Me Now sidebar"
+msgstr ""
+
+#: front/chFront.php:133
+msgid "Thank you"
+msgstr "Paldies!"
+
+#: front/chFront.php:145
+msgid "today"
+msgstr "šodien"
+
+#: front/chFront.php:146
+msgid "tomorrow"
+msgstr "rīt"
+
+#: front/chFront.php:147
+msgid "Monday"
+msgstr "pirmdien"
+
+#: front/chFront.php:148
+msgid "Tuesday"
+msgstr "otrdien"
+
+#: front/chFront.php:149
+msgid "Wednesday"
+msgstr "trešdien"
+
+#: front/chFront.php:150
+msgid "Thursday"
+msgstr "ceturtdien"
+
+#: front/chFront.php:151
+msgid "Friday"
+msgstr "piektdien"
+
+#: front/chFront.php:152
+msgid "Saturday"
+msgstr "sestdien"
+
+#: front/chFront.php:153
+msgid "Sunday"
+msgstr "svētdien"
+
+#: front/chFront.php:156
+msgid "at"
+msgstr "laiks"
+
+#: front/chFront.php:159
+msgid "1 AM"
+msgstr ""
+
+#: front/chFront.php:160
+msgid "2 AM"
+msgstr ""
+
+#: front/chFront.php:161
+msgid "3 AM"
+msgstr ""
+
+#: front/chFront.php:162
+msgid "4 AM"
+msgstr ""
+
+#: front/chFront.php:163
+msgid "5 AM"
+msgstr ""
+
+#: front/chFront.php:164
+msgid "6 AM"
+msgstr ""
+
+#: front/chFront.php:165
+msgid "7 AM"
+msgstr ""
+
+#: front/chFront.php:166
+msgid "8 AM"
+msgstr ""
+
+#: front/chFront.php:167
+msgid "9 AM"
+msgstr ""
+
+#: front/chFront.php:168
+msgid "10 AM"
+msgstr ""
+
+#: front/chFront.php:169
+msgid "11 AM"
+msgstr ""
+
+#: front/chFront.php:170
+msgid "12 AM"
+msgstr ""
+
+#: front/chFront.php:171
+msgid "1 PM"
+msgstr ""
+
+#: front/chFront.php:172
+msgid "2 PM"
+msgstr ""
+
+#: front/chFront.php:173
+msgid "3 PM"
+msgstr ""
+
+#: front/chFront.php:174
+msgid "4 PM"
+msgstr ""
+
+#: front/chFront.php:175
+msgid "5 PM"
+msgstr ""
+
+#: front/chFront.php:176
+msgid "6 PM"
+msgstr ""
+
+#: front/chFront.php:177
+msgid "7 PM"
+msgstr ""
+
+#: front/chFront.php:178
+msgid "8 PM"
+msgstr ""
+
+#: front/chFront.php:179
+msgid "9 PM"
+msgstr ""
+
+#: front/chFront.php:180
+msgid "10 PM"
+msgstr ""
+
+#: front/chFront.php:181
+msgid "11 PM"
+msgstr ""
+
+#: front/chFront.php:182
+msgid "12 PM"
+msgstr ""

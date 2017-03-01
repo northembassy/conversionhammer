@@ -37,6 +37,7 @@ if (!class_exists('chFront')) {
                 wp_enqueue_script('select2ch');
                 wp_register_script('conversionhammer', CHAMMER_JSU . '/ch.js', array('select2ch'), $this->filevers, true);
                 wp_enqueue_script('conversionhammer');
+                wp_localize_script( 'conversionhammer', 'conversionhammer_ajax', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
             }
         }
 
