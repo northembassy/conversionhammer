@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: conversionhammer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-01 01:15+0100\n"
+"POT-Creation-Date: 2017-03-14 00:16+0100\n"
 "PO-Revision-Date: 2017-03-01 01:15+0100\n"
 "Last-Translator: Rolands Umbrovskis <rolands@mediabox.lv>\n"
 "Language-Team: Rolands Umbrovskis <info@mediabox.lv>\n"
@@ -17,280 +17,312 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Eazy Po 0.9.5.3\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: conversionhammer\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: nbproject\n"
 
-#: admin/chAdmin.php:26
+#: stdin:26
 msgid "ConversionHammer"
 msgstr ""
 
-#: admin/chAdmin.php:55
+#: stdin:57
 msgid "Settings"
 msgstr ""
 
-#: admin/chAdmin.php:60
+#: stdin:62
 msgid "contact button"
 msgstr ""
 
-#: admin/chAdmin.php:63 admin/chAdmin.php:99 admin/chAdmin.php:143
+#: stdin:65 stdin:112 stdin:156
 msgid "What’s the best time to call you?"
 msgstr ""
 
-#: admin/chAdmin.php:64 admin/chAdmin.php:150
+#: stdin:66 stdin:163
 msgid "or give us your e-mail"
 msgstr ""
 
-#: admin/chAdmin.php:78 admin/chAdmin.php:135 front/chFront.php:104
+#: stdin:80 stdin:148
 msgid "Call Me Now"
 msgstr ""
 
-#: admin/chAdmin.php:79 admin/chAdmin.php:157
+#: stdin:81 stdin:170
 msgid "Choose a time for the call"
 msgstr ""
 
-#: admin/chAdmin.php:82 admin/chAdmin.php:223
+#: stdin:84 stdin:236
 msgid "Call now"
 msgstr ""
 
-#: admin/chAdmin.php:83 admin/chAdmin.php:229
+#: stdin:85 stdin:242
 msgid "To consult with a specialist"
 msgstr ""
 
-#: admin/chAdmin.php:90
+#: stdin:93
 msgid "Email address where to send emails"
 msgstr ""
 
-#: admin/chAdmin.php:96
+#: stdin:100
+msgid "Email subject"
+msgstr ""
+
+#: stdin:103
+msgid "Current email subject"
+msgstr ""
+
+#: stdin:109
 msgid "Contact button text"
 msgstr ""
-
-#: admin/chAdmin.php:103
-msgid "Phone number"
-msgstr ""
-
-#: admin/chAdmin.php:107
+ 
+#: stdin:120
 msgid "Content title"
 msgstr ""
 
-#: admin/chAdmin.php:113
+#: stdin:126
 msgid "Content title 2nd line"
 msgstr ""
 
-#: admin/chAdmin.php:120
+#: stdin:133
 msgid "Welcome title"
 msgstr ""
 
-#: admin/chAdmin.php:126
+#: stdin:139
 msgid "Welcome text"
 msgstr ""
 
-#: admin/chAdmin.php:132
+#: stdin:145
 msgid "Call Me Now text"
 msgstr ""
 
-#: admin/chAdmin.php:140
+#: stdin:153
 msgid "Best time to call text"
 msgstr ""
 
-#: admin/chAdmin.php:147
+#: stdin:160
 msgid "or give us your e-mail text"
 msgstr ""
 
-#: admin/chAdmin.php:154
+#: stdin:167
 msgid "Choose a time for the calltext"
 msgstr ""
 
-#: admin/chAdmin.php:163
+#: stdin:176
 msgid "Colors (sidebar)"
 msgstr ""
 
-#: admin/chAdmin.php:174
+#: stdin:187
 msgid "Colors button"
 msgstr ""
 
-#: admin/chAdmin.php:177
+#: stdin:190
 msgid "Normal"
 msgstr ""
 
-#: admin/chAdmin.php:178 admin/chAdmin.php:197
+#: stdin:191 stdin:210
 msgid "Button background"
 msgstr ""
 
-#: admin/chAdmin.php:186 admin/chAdmin.php:205
+#: stdin:199 stdin:218
 msgid "Button text"
 msgstr ""
 
-#: admin/chAdmin.php:196
+#: stdin:209
 msgid "Hover"
 msgstr ""
 
-#: admin/chAdmin.php:217
+#: stdin:230
 msgid "Mobile"
 msgstr ""
 
-#: admin/chAdmin.php:219
+#: stdin:232
 msgid "CTA text"
 msgstr ""
 
-#: admin/chAdmin.php:225
+#: stdin:238
 msgid "CTA text 2nd line"
 msgstr ""
 
-#: admin/chAdmin.php:232
+#: stdin:245
 msgid "Background"
 msgstr ""
 
-#: admin/chAdmin.php:240
+#: stdin:253
 msgid "Text"
 msgstr ""
 
-#: admin/chAdmin.php:254
+#: stdin:267
 msgid "Save Changes"
 msgstr ""
+ 
 
-#: front/chFront.php:111 front/chFront.php:114
+#: stdin:111 stdin:114
 msgid "Open contact panel"
 msgstr ""
 
-#: front/chFront.php:124
+#: stdin:124
 msgid "Close Call Me Now sidebar"
 msgstr ""
 
-#: front/chFront.php:133
+#: stdin:133
 msgid "Thank you"
 msgstr ""
 
-#: front/chFront.php:145
+#: stdin:145
 msgid "today"
 msgstr ""
 
-#: front/chFront.php:146
+#: stdin:146
 msgid "tomorrow"
 msgstr ""
 
-#: front/chFront.php:147
+#: stdin:147
 msgid "Monday"
 msgstr ""
 
-#: front/chFront.php:148
+#: stdin:148
 msgid "Tuesday"
 msgstr ""
 
-#: front/chFront.php:149
+#: stdin:149
 msgid "Wednesday"
 msgstr ""
 
-#: front/chFront.php:150
+#: stdin:150
 msgid "Thursday"
 msgstr ""
 
-#: front/chFront.php:151
+#: stdin:151
 msgid "Friday"
 msgstr ""
 
-#: front/chFront.php:152
+#: stdin:152
 msgid "Saturday"
 msgstr ""
 
-#: front/chFront.php:153
+#: stdin:153
 msgid "Sunday"
 msgstr ""
 
-#: front/chFront.php:156
+#: stdin:156
 msgid "at"
 msgstr ""
 
-#: front/chFront.php:159
+#: stdin:159
 msgid "1 AM"
 msgstr ""
 
-#: front/chFront.php:160
+#: stdin:160
 msgid "2 AM"
 msgstr ""
 
-#: front/chFront.php:161
+#: stdin:161
 msgid "3 AM"
 msgstr ""
 
-#: front/chFront.php:162
+#: stdin:162
 msgid "4 AM"
 msgstr ""
 
-#: front/chFront.php:163
+#: stdin:163
 msgid "5 AM"
 msgstr ""
 
-#: front/chFront.php:164
+#: stdin:164
 msgid "6 AM"
 msgstr ""
 
-#: front/chFront.php:165
+#: stdin:165
 msgid "7 AM"
 msgstr ""
 
-#: front/chFront.php:166
+#: stdin:166
 msgid "8 AM"
 msgstr ""
 
-#: front/chFront.php:167
+#: stdin:167
 msgid "9 AM"
 msgstr ""
 
-#: front/chFront.php:168
+#: stdin:168
 msgid "10 AM"
 msgstr ""
 
-#: front/chFront.php:169
+#: stdin:169
 msgid "11 AM"
 msgstr ""
 
-#: front/chFront.php:170
+#: stdin:170
 msgid "12 AM"
 msgstr ""
 
-#: front/chFront.php:171
+#: stdin:171
 msgid "1 PM"
 msgstr ""
 
-#: front/chFront.php:172
+#: stdin:172
 msgid "2 PM"
 msgstr ""
 
-#: front/chFront.php:173
+#: stdin:173
 msgid "3 PM"
 msgstr ""
 
-#: front/chFront.php:174
+#: stdin:174
 msgid "4 PM"
 msgstr ""
 
-#: front/chFront.php:175
+#: stdin:175
 msgid "5 PM"
 msgstr ""
 
-#: front/chFront.php:176
+#: stdin:176
 msgid "6 PM"
 msgstr ""
 
-#: front/chFront.php:177
+#: stdin:177
 msgid "7 PM"
 msgstr ""
 
-#: front/chFront.php:178
+#: stdin:178
 msgid "8 PM"
 msgstr ""
 
-#: front/chFront.php:179
+#: stdin:179
 msgid "9 PM"
 msgstr ""
 
-#: front/chFront.php:180
+#: stdin:180
 msgid "10 PM"
 msgstr ""
 
-#: front/chFront.php:181
+#: stdin:181
 msgid "11 PM"
 msgstr ""
 
-#: front/chFront.php:182
+#: stdin:182
 msgid "12 PM"
 msgstr ""
+
+#: stdin:66
+msgid "Hi, you’ve got a new sales lead!"
+msgstr ""
+
+#: stdin:67
+msgid "Phone number"
+msgstr ""
+
+#: stdin:69
+msgid "Day to call"
+msgstr ""
+
+#: stdin:70
+msgid "Time to call"
+msgstr ""
+
+#: stdin:71
+msgid "With love, conversionhammer"
+msgstr ""
+

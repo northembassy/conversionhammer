@@ -49,14 +49,17 @@ if (!class_exists('conversionHammer')) {
             $customerphonenr = esc_attr($_POST['number']);
             $customerday = esc_attr($_POST['day']);
             $customertime = esc_attr($_POST['time']);
+            $conversionhammer_emailsubject = get_option($chprefix . 'emailsubject', '[ConversionHammer]');
 
             $to = $conversionhammer_toemail;
-            $subject = "[ConversionHammer form]";
+            $subject = $conversionhammer_emailsubject." via ConversionHammer";
             $message = '';
-            $message .= 'Phone: ' . $customerphonenr . "\n";
+            $message .= apply_filters('conversionhammer_emailintrotext', __('Hi, you’ve got a new sales lead!', 'conversionhammer')) . "\n";
+            $message .=  apply_filters('conversionhammer_emailphonenr', __('Phone number', 'conversionhammer')) . ': ' .$customerphonenr . "\n";
 
-            $message .= (isset($customerday) && !empty($customerday)) ? 'When: ' . $customerday . "\n" : '';
-            $message .= (isset($customertime) && !empty($customertime)) ? 'Time: ' . $customertime . "\n" : '';
+            $message .= (isset($customerday) && !empty($customerday)) ? __('Day to call', 'conversionhammer') .': ' . $customerday . "\n" : '';
+            $message .= (isset($customertime) && !empty($customertime)) ? __('Time to call', 'conversionhammer') .': ' . $customertime . "\n" : '';
+            $message .= "\n" . __('With love, conversionhammer', 'conversionhammer')."\n" ;
 
             $returndata = '';
             if (wp_mail($to, $subject, $message)) {

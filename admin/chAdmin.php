@@ -46,6 +46,8 @@ if (!class_exists('chAdmin')) {
             register_setting('ch-settings', $chprefix . 'sbmobilectatext2');
             register_setting('ch-settings', $chprefix . 'sbmobilebg');
             register_setting('ch-settings', $chprefix . 'sbmobiletext'); 
+            register_setting('ch-settings', $chprefix . 'emailsubject'); 
+            
    
         }
 
@@ -83,6 +85,7 @@ if (!class_exists('chAdmin')) {
                   $conversionhammer_sbmobilectatext2 = get_option($chprefix . 'sbmobilectatext2', __('To consult with a specialist', 'conversionhammer'));
                   $conversionhammer_sbmobilebg = get_option($chprefix . 'sbmobilebg', '#006aff');
                   $conversionhammer_sbmobiletext = get_option($chprefix . 'sbmobiletext', '#ffffff');
+                  $conversionhammer_emailsubject = get_option($chprefix . 'emailsubject', '[ConversionHammer]');
                   ?> 
                 <table class="form-table table">
 
@@ -92,6 +95,16 @@ if (!class_exists('chAdmin')) {
                       <input type="text" id="conversionhammer_toemail" name="conversionhammer_toemail" value="<?php echo $conversionhammer_toemail; ?>"/>
                     </td> 
                   </tr>
+
+                  <tr>
+                    <th valign="top"><?php _e('Email subject', 'conversionhammer'); ?></th>
+                    <td valign="top">
+                      <input type="text" id="conversionhammer_emailsubject" name="conversionhammer_emailsubject" value="<?php echo $conversionhammer_emailsubject; ?>"/><br />
+                      <?php _e('Current email subject', 'conversionhammer'); ?>: <strong><?php echo $conversionhammer_emailsubject; ?></strong> via <em>conversionhammer</em>
+                    </td> 
+                  </tr>
+                  
+                  
                   <tr>
                     <th valign="top"><?php _e('Contact button text', 'conversionhammer'); ?></th>
                     <td valign="top">

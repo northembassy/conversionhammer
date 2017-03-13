@@ -5,7 +5,7 @@ License URI: https://simplemediacode.com/license/gpl/
 Tags: 
 Requires at least: 4.0
 Tested up to: 4.7.3
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 
 Get 22% more business leads from your traffic. 
 
@@ -37,6 +37,11 @@ Get it for free now!
 
 * 1st release
 
+= 0.0.3 =
+
+* better translations
+* filters for email
+
 = 0.0.2 =
 
 * better css targeting for customization
@@ -50,6 +55,10 @@ Get it for free now!
 = 1.0.0 =
 
 * 1st release
+
+= 0.0.3 =
+
+* emails filters
 
 = 0.0.2 =
 
