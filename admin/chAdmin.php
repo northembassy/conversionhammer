@@ -278,7 +278,7 @@ try {
      * Do Errors and debug
      * @since 0.0.1
      */
-    $chadmin_debug = 'Caught exception: chAdmin ' . $e->getMessage() . "\n";
+    $chadmin_debug = 'Caught exception: ConversionHammer chAdmin ' . $e->getMessage() . "\n";
 
     if (apply_filters('chadmin_debug_log', defined('WP_DEBUG_LOG') && WP_DEBUG_LOG)) {
         error_log(print_r(compact('chadmin_debug'), true));

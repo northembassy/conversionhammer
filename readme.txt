@@ -1,11 +1,11 @@
 === ConversionHammer ===
 Contributors: rolandinsh
 License: GPL
-License URI: http://simplemediacode.com/license/gpl/
+License URI: https://simplemediacode.com/license/gpl/
 Tags: 
 Requires at least: 4.0
-Tested up to: 4.7.2
-Stable tag: 0.0.1
+Tested up to: 4.7.3
+Stable tag: 0.0.2
 
 Get 22% more business leads from your traffic. 
 
@@ -33,14 +33,30 @@ Get it for free now!
  
 == Changelog ==
 
+= 1.0.0 =
+
+* 1st release
+
+= 0.0.2 =
+
+* better css targeting for customization
+
 = 0.0.1 =
 
-initial
+* initial
 
 == Upgrade Notice ==
 
+= 1.0.0 =
+
+* 1st release
+
+= 0.0.2 =
+
+* better css targeting for customization
+
 = 0.0.1 =
 
-initial
+* initial
 
 

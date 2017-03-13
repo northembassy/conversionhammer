@@ -4,10 +4,10 @@
  * Plugin Name: ConversionHammer
  * Plugin URI: http://conversionhammer.com/
  * Description: WordPress plugin of ConversionHammer
- * Version: 0.0.1
- * Stable tag: 0.0.1
+ * Version: 0.0.2
+ * Stable tag: 0.0.2
  * Requires at least: 4.0
- * Tested up to: 4.7.2
+ * Tested up to: 4.7.3
  * Author: ConversionHammer
  * Author URI: http://conversionhammer.com
  * License: GPL

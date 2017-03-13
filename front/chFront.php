@@ -108,11 +108,11 @@ if (!class_exists('chFront')) {
             <?php echo $this->chStrings('top'); ?>
 
             <div id="call_igsidebar">
-              <a href="javascript:;" title="<?php _e('Open contact panel', 'conversionhammer'); ?>"><?php echo $conversionhammer_contactbuttontext; ?></a>
+              <a href="javascript:;" title="<?php _e('Open contact panel', 'conversionhammer'); ?>" class="ch_contactbuttontext"><?php echo $conversionhammer_contactbuttontext; ?></a>
             </div>
             <div id="call_igsidebar_mobile">
               <a href="tel:<?php echo $conversionhammer_phone; ?>" title="<?php esc_attr_e('Open contact panel', 'conversionhammer'); ?>">
-                <h1><?php
+                <h1 class="ch_sbmobilectatext1"><?php
                     echo $conversionhammer_sbmobilectatext1;
                     echo isset($conversionhammer_sbmobilectatext2) ? '<span class="conversionhammer_sbmobilectatext1">' . $conversionhammer_sbmobilectatext2 . '</span>' : '';
                     ?></h1>
@@ -124,13 +124,13 @@ if (!class_exists('chFront')) {
                   <a class="icon-cancel" href="javascript:;" title="<?php esc_attr_e('Close Call Me Now sidebar', 'conversionhammer'); ?>"></a>
                 </div>
                 <div id="igsidebar_content_title">
-                  <h3><?php
+                  <h3 class="ch_content_title"><?php
                       echo $conversionhammer_content_title;
                       echo isset($conversionhammer_content_title2) ? '<span class="conversionhammer_content_title">' . $conversionhammer_content_title2 . '</span>' : '';
                       ?></h3>
                 </div>
                 <div id="igsidebar_content_thanks">
-                  <h1><?php _e('Thank you', 'conversionhammer'); ?></h1>
+                  <h1 class="ch_thankstitle"><?php _e('Thank you', 'conversionhammer'); ?></h1>
                 </div>
                 <div id="igsidebar_content_welcome">
                   <h1><?php echo $conversionhammer_welcometitle; ?></h1>
@@ -138,7 +138,7 @@ if (!class_exists('chFront')) {
                 </div>
                 <form id="igsidebar_content_sub">
                   <div id="igsidebar_content_sub_schedule">
-                    <h1><?php echo $conversionhammer_besttimecalltext; ?></h1>
+                    <h1 class="ch_besttimecalltext"><?php echo $conversionhammer_besttimecalltext; ?></h1>
                     <div id="igsidebar_content_sub_schedule_block">
                       <div id="igsidebar_content_sub_schedule_block_day">
                         <select name="block_day" id="block_day">
@@ -153,7 +153,7 @@ if (!class_exists('chFront')) {
                           <option value="<?php esc_attr_e('Sunday', 'conversionhammer'); ?>"><?php _e('Sunday', 'conversionhammer'); ?></option>
                         </select>
                       </div>
-                      <p><?php _e('at'); ?></p>
+                      <p class="ch_time_attxt"><?php _e('at'); ?></p>
                       <div id="igsidebar_content_sub_schedule_block_time">
                         <select name="block_time" id="block_time">
                           <option value="<?php esc_attr_e('1 AM', 'conversionhammer'); ?>"><?php _e('1 AM', 'conversionhammer'); ?></option>
@@ -187,13 +187,13 @@ if (!class_exists('chFront')) {
                   <div id="igsidebar_content_sub_mail">
                     <span>
                       <label for="igsidebar_content_sub_mail_email"><?php echo $conversionhammer_orgivemailtext; ?></label>
-                      <input id="igsidebar_content_sub_mail_email" type="email" value="">
+                      <input id="igsidebar_content_sub_mail_email" type="email" value="" />
                     </span>
                   </div>
                   <div id="igsidebar_content_sub_callme">
-                    <input type="tel" value="+1">
+                    <input type="tel" value="+1" class="ch_igsidebar">
                     <button type="submit"><?php echo $conversionhammer_callmectatext; ?></button>
-                    <a href="#igsidebar_content_welcome" title="<?php echo esc_attr($conversionhammer_choosecalltimetext); ?>"><?php
+                    <a href="#igsidebar_content_welcome" title="<?php echo esc_attr($conversionhammer_choosecalltimetext); ?>" id="ch_igsidebar_content_welcome"><?php
                         echo $conversionhammer_choosecalltimetext;
                         ?></a>
                   </div>
@@ -224,7 +224,7 @@ try {
      * Do Errors and debug
      * @since 0.0.1
      */
-    $chfront_debug = 'Caught exception: chFront ' . $e->getMessage() . "\n";
+    $chfront_debug = 'Caught exception: conversionHammer`s class chFront ' . $e->getMessage() . "\n";
 
     if (apply_filters('chfront_debug_log', defined('WP_DEBUG_LOG') && WP_DEBUG_LOG)) {
         error_log(print_r(compact('chfront_debug'), true));

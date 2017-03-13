@@ -55,8 +55,8 @@ if (!class_exists('conversionHammer')) {
             $message = '';
             $message .= 'Phone: ' . $customerphonenr . "\n";
 
-            $message .= isset($customerday) ? 'When: ' . $customerday . "\n" : '';
-            $message .= isset($customertime) ? 'Time: ' . $customertime . "\n" : '';
+            $message .= (isset($customerday) && !empty($customerday)) ? 'When: ' . $customerday . "\n" : '';
+            $message .= (isset($customertime) && !empty($customertime)) ? 'Time: ' . $customertime . "\n" : '';
 
             $returndata = '';
             if (wp_mail($to, $subject, $message)) {

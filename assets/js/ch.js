@@ -1,19 +1,16 @@
 
-
-console.log('ConversionHammer file');
-
 jQuery(document).ready(function ($) {
     console.log('ConversionHammer');
     var callWasSchedueled = false;
     // Select2
     $('select').select2({
-        minimumResultsForSearch: Infinity
+        minimumResultsForSearch: Infinity 
     });
     // Sidebar panel show hours schedueler
     $('#igsidebar_content_sub_callme a').on('click', function (e) {
         e.preventDefault();
         $('#igsidebar_content_sub_schedule, #igsidebar_content_welcome').toggle();
-        callWasSchedueled = true
+        callWasSchedueled = true;
     });
     // Sidebar panel close
     $('#igsidebar_content_close a').on('click', function (e) {
@@ -81,7 +78,6 @@ jQuery(document).ready(function ($) {
                     });
 
                 }
-
 
                 $('#igsidebar_content_sub, #igsidebar_content_welcome').hide();
                 $('#igsidebar_content_thanks').show();
